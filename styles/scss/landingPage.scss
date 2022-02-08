@@ -80,7 +80,7 @@
 		.card {
 			background: map-get($map: $colors, $key: "lightblue");
 			width: 340px;
-			max-width: 80%;
+			max-width: 100%;
 			position: relative;
 
 			.CardActionArea {
@@ -126,8 +126,8 @@
 
 .ecosystem-container {
 	.wrapper {
-		padding: 2em;
-		max-width: 1200px;
+		width: 1200px;
+		max-width: 85%;
 		margin: auto;
 		margin-bottom: 10em;
 
@@ -145,7 +145,7 @@
 
 		.logo-list {
 			margin-top: 1em;
-			border-radius: 10px;
+			border-radius: 3px;
 			padding: 3em;
 			display: flex;
 			gap: 1em;
