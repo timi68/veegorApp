@@ -13,12 +13,17 @@
 		@content;
 	}
 }
+
+@mixin media_500 {
+	@media screen and (max-width: 500px) {
+		@content;
+	}
+}
 @mixin media_550 {
 	@media screen and (max-width: 550px) {
 		@content;
 	}
 }
-
 @mixin formControl(
 	$radius: 50px,
 	$padding: 15px 20px,

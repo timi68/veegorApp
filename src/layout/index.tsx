@@ -10,6 +10,7 @@ import {variant, NavbarData} from "../../lib/data";
 import HouseIcon from "@mui/icons-material/House";
 import ExploreIcon from "@mui/icons-material/Explore";
 import PeopleIcon from "@mui/icons-material/People";
+import Footer from "../../components/global/footer";
 import {
 	CircularProgress,
 	Container,
@@ -61,6 +62,7 @@ function Layout(props: Interfaces.LayoutInterface) {
 					<div className="main" role="main">
 						{children}
 					</div>
+					<Footer />
 				</div>
 			</div>
 		</Fragment>

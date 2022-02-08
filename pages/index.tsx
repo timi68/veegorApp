@@ -11,12 +11,37 @@ import {
 	Stack,
 } from "@mui/material";
 import Link from "next/link";
+import Head from "next/head";
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 
 function LandingPage() {
 	return (
 		<Layout>
+			<Head>
+				<title>Veegor - your easy access to the blockchain</title>
+				<meta
+					name="viewport"
+					content="width=device-width, initial-scale=1.0"
+				/>
+				<meta name="description" content="Veegor Blockchain App" />
+				<meta
+					name="keywords"
+					content="Erc20, Ethereum, Binance, Bitcoin, Matic"
+				/>
+				<meta name="author" content="veegor" />
+				<meta name="email" content="info@veegor.io" />
+				<meta name="website" content="https://veegor.io" />
+				<meta name="Version" content="v1.0.0" />
+
+				{/* favicon */}
+				<link href="public/images/favicon.ico" rel="shortcut icon" />
+				<link
+					rel="icon"
+					type="image/x-icon"
+					href="/images/favicon.ico"
+				/>
+			</Head>
 			<div className="banner">
 				<div
 					className="banner-cover"
@@ -160,7 +185,7 @@ function LandingPage() {
 									alt="ethereum logo image"
 									width={120}
 									height="50"
-									src="/logos/Binance-logo.png"
+									src="/logos/binance.png"
 								/>
 							</div>
 						</div>
@@ -329,7 +354,10 @@ function LandingPage() {
 							/>
 						</div>
 						<div className="action-btn">
-							<Button variant="contained">
+							<Button
+								variant="contained"
+								style={{background: "#3535a1"}}
+							>
 								<span>Subscribe</span>
 							</Button>
 						</div>

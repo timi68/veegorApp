@@ -6,14 +6,14 @@
 	margin-bottom: 18em;
 
 	@include media_400 {
-		margin-bottom: 10em;
+		margin-bottom: 15em;
 	}
 	.layer-content {
 		position: absolute;
 		top: 150px;
 		left: 50%;
 		width: 500px;
-		max-width: 80%;
+		max-width: 90%;
 		transform: translateX(-50%);
 		color: #fff;
 		margin: auto;
@@ -21,12 +21,15 @@
 
 		.primary-text {
 			font-weight: 600;
+			letter-spacing: 0.1em;
 			font-size: map-get($map: $fonts, $key: "medium");
 		}
 
 		.secondary-text {
 			font-size: map-get($map: $fonts, $key: "smaller");
 			color: map-get($map: $colors, $key: "low-white");
+			max-width: 300px;
+			margin: auto;
 		}
 	}
 
@@ -35,12 +38,16 @@
 		width: 500px;
 		position: absolute;
 		left: 50%;
-		bottom: -50%;
+		bottom: -60%;
 		transform: translateX(-50%);
 		transition: $transition;
 
+		@include media_500 {
+			bottom: -40%;
+		}
+
 		@include media_400 {
-			bottom: -25%;
+			bottom: -30%;
 		}
 	}
 }
@@ -117,7 +124,7 @@
 
 .ecosystem-container {
 	.wrapper {
-		padding: 3em;
+		padding: 2em;
 		max-width: 1200px;
 		margin: auto;
 
@@ -142,6 +149,7 @@
 			justify-content: space-around;
 			flex-wrap: wrap;
 			background-color: map-get($map: $colors, $key: "lightblue");
+			box-shadow: map-get($map: $shadow, $key: "card-shadow");
 
 			.logo {
 				background-color: #fff;
@@ -160,8 +168,8 @@
 	margin-block: 5em;
 	background-image: linear-gradient(
 		to bottom,
-		rgb(113, 113, 148),
-		rgb(53, 53, 161)
+		#fff 10%,
+		rgb(53, 53, 161) 60%
 	);
 
 	.wrapper {
@@ -176,8 +184,9 @@
 	}
 	.video-layout {
 		position: relative;
-		min-width: 400px;
+		width: 400px;
 		max-width: 100%;
+		margin: auto;
 		border-radius: 10px;
 		overflow: hidden;
 	}
@@ -233,7 +242,7 @@
 
 	.custom-shape-divider-bottom-1644207901 {
 		position: absolute;
-		bottom: 0;
+		bottom: -2px;
 		left: 0;
 		width: 100%;
 		overflow: hidden;
@@ -256,12 +265,13 @@
 
 .newsletter-section {
 	background: #f7f7f7;
-	box-shadow: map-get($map: $shadow, $key: "normal-shadow");
+	box-shadow: map-get($map: $shadow, $key: "card-shadow");
 	max-width: 1000px;
 	width: 90%;
 	margin: auto;
 	margin-bottom: 3em;
 	padding: 3em 2em;
+	border-radius: 10px;
 
 	.wrapper {
 		display: flex;
@@ -276,7 +286,7 @@
 		max-width: 400px;
 
 		.section-icon {
-			background: #1976d2;
+			background: #3535a1;
 			padding: 0.1em 0.2em;
 			width: fit-content;
 			border-radius: 10px;

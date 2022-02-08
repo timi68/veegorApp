@@ -1,7 +1,7 @@
 {
-	"name": "jimo",
+	"name": "veegor-dapp",
 	"version": "1.0.0",
-	"description": "This is a site for real estate management",
+	"description": "This is a crypot management DApp",
 	"main": "index.js",
 	"scripts": {
 		"dev": "next dev",
@@ -11,19 +11,20 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Jimorealestate/Jimo-Site.git"
+		"url": "git+https://github.com/timi68/VeegorApp.git"
 	},
 	"keywords": [
-		"Estate",
-		"managemnt",
-		"site"
+		"CryptoCurrency",
+		"Blockchain",
+		"DApp",
+		"Web3"
 	],
 	"author": "Timi James",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/Jimorealestate/Jimo-Site/issues"
+		"url": "https://github.com/timi68/VeegorApp/issues"
 	},
-	"homepage": "https://github.com/Jimorealestate/Jimo-Site#readme",
+	"homepage": "https://github.com/timi68/VeegorApp/e#readme",
 	"devDependencies": {
 		"@types/react": "17.0.38",
 		"eslint": "8.6.0",
