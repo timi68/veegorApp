@@ -25,7 +25,7 @@ const linksArray = [
 	{
 		title: "About us",
 		links: [
-			{text: "Be a Jomi Agent", url: "/#"},
+			{text: "Info", url: "/#"},
 			{text: "Our Team", url: "/#"},
 			{text: "Blogs", url: "/#"},
 		],
