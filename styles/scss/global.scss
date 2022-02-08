@@ -182,7 +182,7 @@ body {
 
 .footer {
 	// background-image: linear-gradient(to bottom, #3535a1, #08143a);
-	background: #030d30;
+	background: map-get($map: $colors, $key: "blue");
 	color: #fff;
 	position: relative;
 	padding-top: 2em;
@@ -286,10 +286,10 @@ body {
 			justify-content: center;
 
 			.icon {
-				background: #e2e2e2;
+				background: #00000059;
 
 				svg {
-					fill: rgb(89, 89, 89);
+					fill: #bcbcbc;
 				}
 			}
 		}

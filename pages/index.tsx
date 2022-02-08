@@ -356,7 +356,7 @@ function LandingPage() {
 						<div className="action-btn">
 							<Button
 								variant="contained"
-								style={{background: "#030d30"}}
+								style={{background: "rgb(26 50 105)"}}
 							>
 								<span>Subscribe</span>
 							</Button>

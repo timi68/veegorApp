@@ -74,7 +74,7 @@
 		flex-wrap: wrap;
 		gap: 1em;
 		justify-content: center;
-		max-width: 90%;
+		max-width: 100%;
 		margin: auto;
 
 		.card {
@@ -88,7 +88,7 @@
 			}
 			.card-content {
 				padding: 3em;
-				margin-bottom: 1em;
+				margin-bottom: 3em;
 				font-family: Poppins;
 				height: 100%;
 			}
@@ -112,7 +112,7 @@
 				justify-content: flex-end;
 				margin-top: 1em;
 				position: absolute;
-				bottom: 10px;
+				bottom: 1em;
 				right: 3em;
 
 				.link-label {
@@ -286,7 +286,7 @@
 		max-width: 400px;
 
 		.section-icon {
-			background: #030d30;
+			background: map-get($map: $colors, $key: "blue");
 			padding: 0.1em 0.2em;
 			width: fit-content;
 			border-radius: 10px;

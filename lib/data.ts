@@ -99,7 +99,7 @@ export const FeaturesData = [
 		title: "Multi Wallets Creation",
 		text: "Securely Store and manage digital currencies with ease in the smart and beautiful mobile-App cryptocurrency wallets. Create Unlimited Wallets for your different purposes. Veegor Multi Wallet Feature is for users who want to have different wallets based on different needs, purpose, and business to store, manage their different tokens and monitor their portfolio from the Tip of their Finger.",
 		url: "#",
-		url_label: "COMING SOON",
+		url_label: "COMING SOON!",
 		icon: "/icons/nft.png",
 	},
 	{
