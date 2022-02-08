@@ -25,29 +25,51 @@ export const variant = {
 
 export const NavbarData = [
 	{
-		text: "PROTOCOLS",
-		link: "/protocols",
-		icon: FeedIcon,
-	},
-	{
-		text: "ABOUT US",
-		link: "/about-us",
-		icon: InfoIcon,
-	},
-	{
-		text: "FEATURES",
-		link: "/#features",
-		icon: FeaturedPlayListIcon,
-	},
-	{
 		text: "TOKEN",
 		link: "/token",
 		icon: TokenIcon,
 	},
 	{
+		text: "PROTOCOLS",
+		link: "/protocols",
+		icon: FeedIcon,
+		subList: [
+			{
+				text: "Network protocol",
+				link: "/#",
+			},
+			{
+				text: "Listing protocol",
+				link: "/#",
+			},
+		],
+	},
+	{
+		text: "ABOUT US",
+		link: "/about-us",
+		icon: InfoIcon,
+		subList: [
+			{text: "About us", link: "/#"},
+			{text: "White paper", link: "/#"},
+		],
+	},
+	{
+		text: "FEATURES",
+		link: "/#features",
+		icon: FeaturedPlayListIcon,
+		subList: [
+			{text: "Features", link: "/#"},
+			{text: "Use case", link: "/#"},
+		],
+	},
+	{
 		text: "WALLET",
 		link: "/wallet",
 		icon: AccountBalanceWalletIcon,
+		subList: [
+			{text: "Wallet", link: "/#"},
+			{text: "White paper", link: "/#"},
+		],
 	},
 ];
 

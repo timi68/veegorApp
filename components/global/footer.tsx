@@ -103,15 +103,15 @@ function Footer({children}: {children?: React.ReactNode}) {
 																		gap: ".5em",
 																	}}
 																>
-																	<span>
-																		{a.text}
-																	</span>
 																	<ArrowForwardIosIcon
 																		style={{
 																			fontSize:
 																				".8em",
 																		}}
 																	/>
+																	<span>
+																		{a.text}
+																	</span>
 																</a>
 															</Link>
 														</div>

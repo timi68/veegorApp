@@ -11,6 +11,8 @@ import HouseIcon from "@mui/icons-material/House";
 import ExploreIcon from "@mui/icons-material/Explore";
 import PeopleIcon from "@mui/icons-material/People";
 import Footer from "../../components/global/footer";
+import ExpandLess from "@mui/icons-material/ExpandLess";
+import ExpandMore from "@mui/icons-material/ExpandMore";
 import {
 	CircularProgress,
 	Container,
@@ -22,6 +24,8 @@ import {
 	ListItem,
 	ListItemIcon,
 	ListItemText,
+	ListItemButton,
+	Collapse,
 } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
@@ -217,6 +221,14 @@ function Navbar() {
 						<div className="drawer-wrapper">
 							<ul>
 								{NavbarData.map((data, index) => {
+									if (Boolean(data.subList)) {
+										return (
+											<ListWithSubList
+												data={data}
+												key={index}
+											/>
+										);
+									}
 									return (
 										<Link
 											key={index}
@@ -224,7 +236,7 @@ function Navbar() {
 											href={data.link}
 										>
 											<a href="#">
-												<ListItem>
+												<ListItemButton>
 													<ListItemIcon>
 														<data.icon fontSize="small" />
 													</ListItemIcon>
@@ -235,7 +247,7 @@ function Navbar() {
 															</small>
 														}
 													/>
-												</ListItem>
+												</ListItemButton>
 											</a>
 										</Link>
 									);
@@ -291,4 +303,49 @@ function Navbar() {
 	);
 }
 
+type Props = {
+	children?: React.ReactNode;
+	data: {
+		text: string;
+		icon: any;
+		subList?: {
+			text: string;
+			link: string;
+		}[];
+	};
+};
+
+function ListWithSubList(props: Props): JSX.Element {
+	const [open, setOpen] = React.useState(false);
+
+	const handleClick = () => {
+		setOpen(!open);
+	};
+	return (
+		<React.Fragment>
+			<ListItemButton onClick={handleClick}>
+				<ListItemIcon>
+					<props.data.icon />
+				</ListItemIcon>
+				<ListItemText primary={<small>{props.data.text}</small>} />
+				{open ? <ExpandLess /> : <ExpandMore />}
+			</ListItemButton>
+			<Collapse in={open} timeout="auto" unmountOnExit>
+				{props.data.subList.map((data, index) => {
+					return (
+						<Link href={data.link} key={index} passHref>
+							<a href="#">
+								<List component="div" disablePadding>
+									<ListItemButton sx={{pl: 4}}>
+										<ListItemText primary={data.text} />
+									</ListItemButton>
+								</List>
+							</a>
+						</Link>
+					);
+				})}
+			</Collapse>
+		</React.Fragment>
+	);
+}
 export default Layout;
