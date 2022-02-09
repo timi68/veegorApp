@@ -4,7 +4,7 @@ App use to manage cryptocurrency
 
 ## Production Site
 
-[https://veegor.heorkuapp.com]("Go To App")
+[Go to site](https://veegor.herokuapp.com)
 
 #### Crypto Managment System
 
