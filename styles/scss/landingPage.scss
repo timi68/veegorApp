@@ -22,6 +22,7 @@
 		.primary-text {
 			font-weight: 600;
 			letter-spacing: 0.1em;
+			margin-bottom: 5px;
 			font-size: map-get($map: $fonts, $key: "medium");
 		}
 
@@ -30,6 +31,7 @@
 			color: map-get($map: $colors, $key: "low-white");
 			max-width: 300px;
 			margin: auto;
+			line-height: 1.8em;
 		}
 	}
 

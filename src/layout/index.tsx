@@ -253,7 +253,7 @@ function Navbar() {
 								style={{padding: 12, marginTop: "1em"}}
 							>
 								<Button
-									color="warning"
+									style={{background: "#e29f1a"}}
 									size="medium"
 									variant="contained"
 									fullWidth
