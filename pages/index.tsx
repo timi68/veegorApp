@@ -51,7 +51,7 @@ function LandingPage() {
 						className="image"
 						layout="fill"
 						priority
-						src="/images/bannerCover.png"
+						src="https.veegor.io/images/homebg.png"
 						alt="banner cover image"
 					/>
 				</div>
