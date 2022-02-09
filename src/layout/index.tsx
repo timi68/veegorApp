@@ -31,30 +31,18 @@ import Link from "next/link";
 import Image from "next/image";
 
 function Layout(props: Interfaces.LayoutInterface) {
-	const [loading, setLoading] = React.useState<boolean>(true);
+	// const [loading, setLoading] = React.useState<boolean>(true);
 	const {children, type, text} = props;
 	const headerRef = React.useRef<HTMLDivElement>(null);
 
-	const handleScroll = (e: React.ChangeEvent<HTMLDivElement>) => {
-		const target = e.target.scrollTop;
-		if (target > 10) headerRef.current.classList.add("scrolling");
+	const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
+		const target = e.target as HTMLDivElement;
+		if (target.scrollTop > 10) headerRef.current.classList.add("scrolling");
 		else headerRef.current.classList.remove("scrolling");
 	};
 
-	React.useEffect(() => {
-		setTimeout(() => {
-			setLoading(false);
-		}, 3000);
-	}, []);
-
 	return (
 		<Fragment>
-			{loading && (
-				<div className="loader">
-					<CircularProgress variant="indeterminate" />
-				</div>
-			)}
-			{/*@ts-ignore */}
 			<div className="container" onScroll={handleScroll}>
 				<div className="wrapper page-wrapper">
 					<div
@@ -171,7 +159,7 @@ function Navbar() {
 					</div>
 					<div className="launch" id="launch-app-btn-wrap">
 						<Button
-							color="warning"
+							style={{background: "#e29f1a"}}
 							size="small"
 							variant="contained"
 						>
@@ -191,7 +179,7 @@ function Navbar() {
 				<Stack direction="row" alignItems="center" spacing={3}>
 					<div className="launch" id="launch-dapp-btn-wrap">
 						<Button
-							color="warning"
+							style={{background: "#e29f1a"}}
 							size="medium"
 							variant="contained"
 						>
@@ -242,7 +230,13 @@ function Navbar() {
 													</ListItemIcon>
 													<ListItemText
 														primary={
-															<small>
+															<small
+																style={{
+																	fontFamily:
+																		"Poppins",
+																	fontWeight: 500,
+																}}
+															>
 																{data.text}
 															</small>
 														}
@@ -291,7 +285,7 @@ function Navbar() {
 					>
 						<Image
 							src="/logos/logo-light.png"
-							height="40"
+							height="30"
 							width={120}
 							alt="Veegor logo"
 						/>
@@ -327,7 +321,18 @@ function ListWithSubList(props: Props): JSX.Element {
 				<ListItemIcon>
 					<props.data.icon />
 				</ListItemIcon>
-				<ListItemText primary={<small>{props.data.text}</small>} />
+				<ListItemText
+					primary={
+						<small
+							style={{
+								fontFamily: "Poppins",
+								fontWeight: 500,
+							}}
+						>
+							{props.data.text}
+						</small>
+					}
+				/>
 				{open ? <ExpandLess /> : <ExpandMore />}
 			</ListItemButton>
 			<Collapse in={open} timeout="auto" unmountOnExit>
@@ -337,7 +342,18 @@ function ListWithSubList(props: Props): JSX.Element {
 							<a href="#">
 								<List component="div" disablePadding>
 									<ListItemButton sx={{pl: 4}}>
-										<ListItemText primary={data.text} />
+										<ListItemText
+											primary={
+												<small
+													style={{
+														fontFamily: "Poppins",
+														fontWeight: 400,
+													}}
+												>
+													{data.text}
+												</small>
+											}
+										/>
 									</ListItemButton>
 								</List>
 							</a>

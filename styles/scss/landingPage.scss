@@ -59,7 +59,7 @@
 	margin-bottom: 10em;
 
 	.features-header {
-		margin-bottom: 1em;
+		margin-bottom: 2em;
 		.title {
 			font-weight: 600;
 			text-align: center;
@@ -73,6 +73,7 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		gap: 1em;
+		padding: 1em;
 		justify-content: center;
 		max-width: 100%;
 		margin: auto;
@@ -80,7 +81,7 @@
 		.card {
 			background: map-get($map: $colors, $key: "lightblue");
 			width: 340px;
-			max-width: 85%;
+			max-width: 95%;
 			position: relative;
 
 			.CardActionArea {
@@ -105,7 +106,9 @@
 				color: map-get($map: $colors, $key: "title-color");
 			}
 			.card-text {
-				font-size: 0.9em;
+				font-size: 1em;
+				font-weight: 500;
+				line-height: 1.8em;
 			}
 			.card-link {
 				display: flex;
@@ -118,6 +121,7 @@
 				.link-label {
 					color: map-get($map: $colors, $key: "title-color");
 					text-transform: uppercase;
+					font-weight: 500;
 				}
 			}
 		}
@@ -127,14 +131,17 @@
 .ecosystem-container {
 	.wrapper {
 		width: 1200px;
-		max-width: 85%;
+		max-width: 90%;
 		margin: auto;
 		margin-bottom: 10em;
 
 		.section-header {
 			text-align: center;
+			margin-bottom: 2em;
+
 			.primary-text {
 				font-weight: 600;
+				margin-bottom: 10px;
 				font-size: map-get($map: $fonts, $key: "medium");
 				color: map-get($map: $colors, $key: "title-color");
 			}
@@ -208,7 +215,8 @@
 		.text {
 			// color: map-get($map: $colors, $key: "low-white");
 			font-size: 0.8em;
-			font-weight: 300;
+			font-weight: 500;
+			line-height: 1.8em;
 		}
 	}
 
@@ -265,7 +273,7 @@
 }
 
 .newsletter-section {
-	background: #f7f7f7;
+	// background: whitesmoke;
 	box-shadow: map-get($map: $shadow, $key: "card-shadow");
 	max-width: 1000px;
 	width: 90%;
@@ -287,7 +295,7 @@
 		max-width: 400px;
 
 		.section-icon {
-			background: map-get($map: $colors, $key: "blue");
+			background: #e29f1a;
 			padding: 0.1em 0.2em;
 			width: fit-content;
 			border-radius: 10px;
@@ -312,6 +320,8 @@
 	}
 
 	.secondary-text {
-		font-size: 0.8em;
+		font-size: 0.9em;
+		line-height: 1.8em;
+		font-weight: 500;
 	}
 }

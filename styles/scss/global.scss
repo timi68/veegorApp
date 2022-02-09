@@ -182,8 +182,8 @@ body {
 
 .footer {
 	// background-image: linear-gradient(to bottom, #3535a1, #08143a);
-	background: map-get($map: $colors, $key: "blue");
-	color: #fff;
+	// background: map-get($map: $colors, $key: "blue");
+	// color: #fff;
 	position: relative;
 	padding-top: 2em;
 
@@ -213,7 +213,7 @@ body {
 	padding: 1em;
 
 	.title {
-		font-weight: 300;
+		font-weight: 600;
 		font-size: 1em;
 		margin-bottom: 10px;
 		color: map-get($map: $colors, $key: "lowblue");
@@ -227,17 +227,17 @@ body {
 		list-style: none;
 		display: flex;
 		gap: 20px 30px;
-		justify-content: flex-start;
-		width: fit-content;
+		justify-content: space-between;
 		margin: auto;
+		padding: 1em;
 		flex-wrap: wrap;
 
 		.link-subgroup {
-			min-width: 150px;
+			min-width: 180px;
 
 			.link-title {
 				margin-bottom: 1em;
-				font-weight: 300;
+				font-weight: 600;
 				color: map-get($colors, "lowblue");
 				font-size: 1em;
 			}
@@ -246,21 +246,17 @@ body {
 			}
 
 			.link {
-				color: #979797;
+				color: #434343;
 				font-size: 0.9em;
 			}
 		}
 
-		@include media_360 {
-			// justify-content: space-around;
-			.link-subgroup {
-				min-width: fit-content;
-			}
-			.link,
-			.link-title {
-				font-size: 0.85em;
-			}
-		}
+		// @include media_360 {
+		// 	.link,
+		// 	.link-title {
+		// 		font-size: 0.85em;
+		// 	}
+		// }
 	}
 
 	.flex-wrap {
@@ -269,7 +265,7 @@ body {
 		flex-wrap: wrap;
 		gap: 3em;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-around;
 	}
 	.connect-container {
 		max-width: fit-content;
@@ -286,10 +282,10 @@ body {
 			justify-content: center;
 
 			.icon {
-				background: #00000059;
+				background: #d8d8d859;
 
 				svg {
-					fill: #bcbcbc;
+					fill: #373737;
 				}
 			}
 		}
@@ -310,7 +306,7 @@ body {
 		font-size: 0.9em;
 		max-width: 500px;
 		margin: auto;
-		font-weight: 300;
+		font-weight: 400;
 		text-align: center;
 		margin-block: 1em;
 
