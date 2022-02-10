@@ -112,7 +112,9 @@ function LandingPage() {
 											<div className="card-body">
 												<div className="card-text">
 													<div className="text">
-														{content.text}
+														<span>
+															{content.text}
+														</span>
 													</div>
 												</div>
 												<div className="card-link">
