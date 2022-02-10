@@ -181,9 +181,8 @@ body {
 // ---------------------------------------------------
 
 .footer {
-	// background-image: linear-gradient(to bottom, #3535a1, #08143a);
-	// background: map-get($map: $colors, $key: "blue");
-	// color: #fff;
+	background: #000c35;
+	color: #fff;
 	position: relative;
 	padding-top: 2em;
 
@@ -246,7 +245,7 @@ body {
 			}
 
 			.link {
-				color: #434343;
+				color: #939393;
 				font-size: 0.9em;
 			}
 		}
@@ -282,10 +281,10 @@ body {
 			justify-content: center;
 
 			.icon {
-				background: #d8d8d859;
+				background: #ffffffd2;
 
 				svg {
-					fill: #373737;
+					fill: #353030;
 				}
 			}
 		}

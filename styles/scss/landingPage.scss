@@ -108,8 +108,8 @@
 				color: map-get($map: $colors, $key: "title-color");
 			}
 			.card-text {
-				font-size: 1em;
-				font-weight: 500;
+				font-size: 1.1em;
+				font-weight: 400;
 				line-height: 1.8em;
 			}
 			.card-link {
@@ -297,7 +297,7 @@
 		max-width: 400px;
 
 		.section-icon {
-			background: #e29f1a;
+			background: #000c35;
 			padding: 0.1em 0.2em;
 			width: fit-content;
 			border-radius: 10px;

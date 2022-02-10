@@ -44,7 +44,7 @@ const linksArray = [
 function Footer({children}: {children?: React.ReactNode}) {
 	return (
 		<div className="footer page-footer">
-			<div className="custom-shape-divider-top-1644277638">
+			{/* <div className="custom-shape-divider-top-1644277638">
 				<svg
 					data-name="Layer 1"
 					xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ function Footer({children}: {children?: React.ReactNode}) {
 						className="shape-fill"
 					></path>
 				</svg>
-			</div>
+			</div> */}
 			<div className="footer-wrapper">
 				<div className="navigation-container">
 					<div className="navigation-link-list-wrapper">

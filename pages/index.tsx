@@ -51,7 +51,7 @@ function LandingPage() {
 						className="image"
 						layout="fill"
 						priority
-						src="/images/bannerCover.png"
+						src="/images/homebg.jpg"
 						alt="banner cover image"
 					/>
 				</div>
@@ -356,7 +356,7 @@ function LandingPage() {
 						<div className="action-btn">
 							<Button
 								variant="contained"
-								style={{background: "#e29f1a"}}
+								style={{background: "#000c35"}}
 							>
 								<span>Subscribe</span>
 							</Button>
