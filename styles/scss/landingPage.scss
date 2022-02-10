@@ -143,12 +143,13 @@
 
 			.primary-text {
 				font-weight: 600;
-				margin-bottom: 10px;
+				margin-bottom: 5px;
 				font-size: map-get($map: $fonts, $key: "medium");
 				color: map-get($map: $colors, $key: "title-color");
 			}
 			.secondary-text {
 				font-size: 0.8em;
+				line-height: 1.7;
 			}
 		}
 
