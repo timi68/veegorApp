@@ -323,6 +323,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		min-width: 300px;
 
 		.form-control {
 			width: 100%;
@@ -330,7 +331,7 @@
 		.text-control {
 			padding: 1em;
 			background: #ececec;
-			border-radius: 10px;
+			border-radius: 5px;
 			margin: auto;
 			font-size: 1em;
 			font-family: Poppins;
@@ -347,7 +348,12 @@
 			margin-top: 0.5em;
 		}
 	}
-
+	@include media_400 {
+		padding: 3em 1.5em;
+		.section-form {
+			min-width: 90%;
+		}
+	}
 	.primary-text {
 		font-weight: 600;
 		margin-block: 1em;
