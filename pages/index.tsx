@@ -347,18 +347,17 @@ function LandingPage() {
 					</div>
 					<div className="section-form">
 						<div className="form-control">
-							<TextField
-								label="Enter your email*"
-								margin="dense"
-								size="small"
-								variant="outlined"
-								fullWidth
+							<input
+								type="email"
+								className="text-control email-textbox"
+								placeholder="Enter your email"
+								id="email"
 							/>
 						</div>
 						<div className="action-btn">
 							<Button
 								variant="contained"
-								style={{background: "#000c35"}}
+								style={{background: "#233664"}}
 							>
 								<span>Subscribe</span>
 							</Button>
