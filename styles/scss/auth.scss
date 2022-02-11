@@ -58,7 +58,8 @@
 		margin-block: 2em;
 		.submit-btn {
 			padding: 1em;
-			background: map-get($map: $colors, $key: "blue");
+			// background: map-get($map: $colors, $key: "blue");
+			background: #17275c;
 			color: #fff;
 			text-align: center;
 			width: 100%;
@@ -84,6 +85,14 @@
 			color: map-get($map: $colors, $key: "blue");
 			font-weight: 600;
 		}
+	}
+}
+
+.auth {
+	.logo-wrapper {
+		padding: 2em;
+		display: grid;
+		place-items: center;
 	}
 }
 

@@ -35,11 +35,14 @@ function LandingPage() {
 				<meta name="Version" content="v1.0.0" />
 
 				{/* favicon */}
-				<link href="public/images/favicon.ico" rel="shortcut icon" />
+				<link
+					href="https://veegor.io/public/images/favicon.ico"
+					rel="shortcut icon"
+				/>
 				<link
 					rel="icon"
 					type="image/x-icon"
-					href="/images/favicon.ico"
+					href="https://veegor.io/images/favicon.ico"
 				/>
 			</Head>
 			<div className="banner">

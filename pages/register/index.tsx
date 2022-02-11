@@ -9,6 +9,27 @@ function Register() {
 	return (
 		<React.Fragment>
 			<div className="auth register-container">
+				<div className="logo-wrapper">
+					<Link passHref href="/">
+						<a
+							href="#"
+							className="logo"
+							style={{
+								display: "flex",
+								alignItems: "center",
+								fontSize: "1.5em",
+								fontWeight: 600,
+							}}
+						>
+							<Image
+								src="/logos/logo-dark.png"
+								height="40"
+								width={150}
+								alt="Veegor logo"
+							/>
+						</a>
+					</Link>
+				</div>
 				<div className="auth-wrapper register-wrapper">
 					<div className="page-bg-image-container">
 						{/* <Image

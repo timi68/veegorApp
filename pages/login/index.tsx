@@ -8,6 +8,27 @@ function Login() {
 	return (
 		<React.Fragment>
 			<div className="auth login-container">
+				<div className="logo-wrapper">
+					<Link passHref href="/">
+						<a
+							href="#"
+							className="logo"
+							style={{
+								display: "flex",
+								alignItems: "center",
+								fontSize: "1.5em",
+								fontWeight: 600,
+							}}
+						>
+							<Image
+								src="/logos/logo-dark.png"
+								height="40"
+								width={150}
+								alt="Veegor logo"
+							/>
+						</a>
+					</Link>
+				</div>
 				<div className="auth-wrapper login-wrapper">
 					<div className="section sideimage">
 						<div className="bg-wrapper">
