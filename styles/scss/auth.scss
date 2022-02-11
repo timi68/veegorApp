@@ -6,10 +6,10 @@
 
 .form-box {
 	flex-grow: 1;
-	height: 100vh;
 	overflow: auto;
 	width: auto;
 	padding: 3em;
+	box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.1);
 	position: relative;
 	display: grid;
 	place-items: center;
@@ -91,6 +91,8 @@
 
 .auth-wrapper {
 	display: flex;
+	padding-block: 3em;
+	// height: 100vh;
 
 	.sideimage {
 		position: relative;
@@ -100,30 +102,33 @@
 }
 
 .login-wrapper {
-	@include media_950 {
-		position: relative;
+	position: relative;
+	display: block;
 
+	.form-box {
+		width: 500px;
+		max-width: 95%;
+
+		flex-grow: 0;
+		background: #fff;
+		height: 90%;
+		border-radius: 15px;
+		margin: auto;
+
+		@include media_400 {
+			padding-inline: 1em;
+		}
+		.form-wrapper {
+			max-width: 500px;
+			margin: auto;
+		}
+	}
+
+	@include media_950 {
 		.sideimage {
 			width: 100vw;
 			height: 100vh;
 			position: absolute;
-		}
-		.form-box {
-			width: 500px;
-			max-width: 95%;
-			flex-grow: 0;
-			background: #fff;
-			height: 90%;
-			border-radius: 15px;
-			margin: auto;
-
-			@include media_400 {
-				padding-inline: 1em;
-			}
-
-			.text-control {
-				width: 95%;
-			}
 		}
 	}
 }

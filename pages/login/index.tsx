@@ -11,12 +11,12 @@ function Login() {
 				<div className="auth-wrapper login-wrapper">
 					<div className="section sideimage">
 						<div className="bg-wrapper">
-							<Image
+							{/* <Image
 								layout="fill"
 								priority
 								src="/images/loginbg.png"
 								alt="background-image for login page"
-							/>
+							/> */}
 						</div>
 					</div>
 					<div className="section form-box">
@@ -37,7 +37,7 @@ function Login() {
 									<input
 										type="text"
 										id="username"
-										placeholder=""
+										placeholder="Enter your username"
 										name="username"
 										className="text-control username"
 									/>
@@ -54,7 +54,7 @@ function Login() {
 									<input
 										type="text"
 										id="username"
-										placeholder=""
+										placeholder="Enter your wallet key"
 										name="username"
 										className="text-control username"
 									/>
@@ -88,7 +88,7 @@ function Login() {
 					</div>
 				</div>
 			</div>
-			{/* <Footer /> */}
+			<Footer />
 		</React.Fragment>
 	);
 }

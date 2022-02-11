@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "../../components/global/footer";
+import {TextField} from "@mui/material";
 
 function Register() {
 	return (
@@ -10,13 +11,13 @@ function Register() {
 			<div className="auth register-container">
 				<div className="auth-wrapper register-wrapper">
 					<div className="page-bg-image-container">
-						<Image
+						{/* <Image
 							src="/images/homebg.jpg"
 							layout="fill"
 							priority
 							alt="background-image"
 							className="bgimage"
-						/>
+						/> */}
 					</div>
 					<div className="section form-box">
 						<form action="" className="form-group login-form">
@@ -41,7 +42,7 @@ function Register() {
 									<input
 										type="text"
 										id="username"
-										placeholder=""
+										placeholder="Enter username"
 										name="username"
 										className="text-control username"
 									/>
@@ -58,7 +59,7 @@ function Register() {
 									<input
 										type="email"
 										id="email"
-										placeholder=""
+										placeholder="Enter a valid email"
 										name="email"
 										className="text-control email"
 									/>
@@ -75,7 +76,7 @@ function Register() {
 									<input
 										type="text"
 										id="username"
-										placeholder=""
+										placeholder="Enter your wallet key"
 										name="username"
 										className="text-control username"
 									/>
@@ -106,7 +107,7 @@ function Register() {
 					</div>
 				</div>
 			</div>
-			{/* <Footer /> */}
+			<Footer />
 		</React.Fragment>
 	);
 }
