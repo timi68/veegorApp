@@ -158,13 +158,15 @@ function Navbar() {
 						</Link>
 					</div>
 					<div className="launch" id="launch-app-btn-wrap">
-						<Button
-							style={{background: "#e29f1a"}}
-							size="small"
-							variant="contained"
-						>
-							Launch DApp
-						</Button>
+						<Link href="/login" passHref>
+							<Button
+								style={{background: "#e29f1a"}}
+								size="small"
+								variant="contained"
+							>
+								Launch DApp
+							</Button>
+						</Link>
 					</div>
 				</Stack>
 			</nav>
