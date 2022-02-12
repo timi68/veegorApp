@@ -178,13 +178,15 @@ function Navbar() {
 			<nav className="page-navbar responsive mobile-screen">
 				<Stack direction="row" alignItems="center" spacing={3}>
 					<div className="launch" id="launch-dapp-btn-wrap">
-						<Button
-							style={{background: "#e29f1a"}}
-							size="medium"
-							variant="contained"
-						>
-							Launch DApp
-						</Button>
+						<Link href="/login" passHref>
+							<Button
+								style={{background: "#e29f1a"}}
+								size="medium"
+								variant="contained"
+							>
+								Launch DApp
+							</Button>
+						</Link>
 					</div>
 					<div className="navigation-icon">
 						<IconButton

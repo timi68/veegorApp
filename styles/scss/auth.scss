@@ -7,12 +7,21 @@
 .form-box {
 	flex-grow: 1;
 	overflow: auto;
-	width: auto;
+	max-width: 90%;
 	padding: 3em;
 	box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.1);
 	position: relative;
 	display: grid;
 	place-items: center;
+	background: #fff;
+	width: 500px;
+	border-radius: 10px;
+	margin: auto;
+	height: 90%;
+
+	@include media_400 {
+		padding-inline: 1em;
+	}
 
 	.form-group {
 		width: 100%;
@@ -100,8 +109,7 @@
 // ---------------------------------------------------------------
 
 .auth-wrapper {
-	display: flex;
-	padding-block: 3em;
+	padding-block: 1em 3em;
 	// height: 100vh;
 
 	.sideimage {
@@ -111,70 +119,15 @@
 	}
 }
 
-.login-wrapper {
-	position: relative;
-	display: block;
-
-	.form-box {
-		width: 500px;
-		max-width: 95%;
-
-		flex-grow: 0;
-		background: #fff;
-		height: 90%;
-		border-radius: 15px;
-		margin: auto;
-
-		@include media_400 {
-			padding-inline: 1em;
-		}
-		.form-wrapper {
-			max-width: 500px;
-			margin: auto;
-		}
-	}
-
-	@include media_950 {
-		.sideimage {
-			width: 100vw;
-			height: 100vh;
-			position: absolute;
-		}
-	}
-}
 // ------------------Register Component StyleSheet Edit -----------------
 // ----------------------------------------------------------------------
 
 .register-wrapper {
-	.form-box {
-		// background: #e7eeff;
-		background: #fff;
-		flex-grow: 0;
-		width: 500px;
-		border-radius: 15px;
-		max-width: 95%;
-		padding: 3em;
-		margin: auto;
-		height: 90%;
-
-		@include media_400 {
-			padding-inline: 1em;
+	.form-label {
+		.secondary-text {
+			font-size: 0.8em;
+			font-weight: 400;
+			color: map-get($map: $colors, $key: "black");
 		}
-		.form-label {
-			.secondary-text {
-				font-size: 0.6em;
-				font-weight: 400;
-				color: map-get($map: $colors, $key: "black");
-			}
-		}
-	}
-}
-.page-bg-image-container {
-	position: absolute;
-	height: 100vh;
-	width: 100vw;
-
-	.bgimage {
-		filter: brightness(50%);
 	}
 }
