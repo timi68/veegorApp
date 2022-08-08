@@ -1,4 +1,4 @@
-# Veegor DApp
+# Veegor
 
 App use to manage cryptocurrency
 

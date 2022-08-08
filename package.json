@@ -1,47 +1,50 @@
 {
-	"name": "veegor-dapp",
-	"version": "1.0.0",
-	"description": "This is a crypot management DApp",
-	"main": "index.js",
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/timi68/VeegorApp.git"
-	},
-	"keywords": [
-		"CryptoCurrency",
-		"Blockchain",
-		"DApp",
-		"Web3"
-	],
-	"author": "Timi James",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/timi68/VeegorApp/issues"
-	},
-	"homepage": "https://github.com/timi68/VeegorApp/e#readme",
-	"devDependencies": {
-		"@types/react": "17.0.38",
-		"eslint": "8.6.0",
-		"eslint-config-next": "12.0.7",
-		"typescript": "4.5.4"
-	},
-	"dependencies": {
-		"@emotion/react": "^11.7.1",
-		"@emotion/styled": "^11.6.0",
-		"@mui/icons-material": "^5.2.5",
-		"@mui/material": "^5.2.7",
-		"@mui/styles": "^5.2.3",
-		"framer-motion": "^5.5.5",
-		"next": "^12.0.7",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2",
-		"sass": "^1.46.0",
-		"swiper": "^7.4.1"
-	}
+  "name": "veegor-dapp",
+  "version": "1.0.0",
+  "description": "This is a crypot management DApp",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timi68/VeegorApp.git"
+  },
+  "keywords": [
+    "CryptoCurrency",
+    "Blockchain",
+    "DApp",
+    "Web3"
+  ],
+  "author": "Timi James",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timi68/VeegorApp/issues"
+  },
+  "homepage": "https://github.com/timi68/VeegorApp/e#readme",
+  "devDependencies": {
+    "@types/node": "^18.6.4",
+    "@types/react": "17.0.38",
+    "eslint": "8.6.0",
+    "eslint-config-next": "12.0.7",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1",
+    "typescript": "4.5.4"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/material": "^5.2.7",
+    "@mui/styles": "^5.2.3",
+    "framer-motion": "^5.5.5",
+    "next": "^12.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.46.0",
+    "swiper": "^7.4.1"
+  }
 }
