@@ -251,7 +251,7 @@ function LandingPage() {
             </Box>
             <div className="logo-list">
               {logos.map((logo, index) => (
-                <Card raised elevation={1} sx={{ p: 1.5 }}>
+                <Card raised elevation={1} sx={{ p: 1.5 }} key={index}>
                   <Image
                     alt={logo.alt}
                     width={120}
