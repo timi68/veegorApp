@@ -38,7 +38,7 @@ function LandingPage() {
           }}
         >
           <CardMedia
-            src={"/images/landingbg.jpg"}
+            src={"/images/banner.jpg"}
             component={"img"}
             sx={{
               position: "absolute",
@@ -105,7 +105,38 @@ function LandingPage() {
             </div>
           </Stack>
         </Card>
-        <Box className={"investment-wrapper"} my={5} component={"section"}>
+        <Box className="about-us" my={5}>
+          <Card
+            raised
+            sx={{
+              p: 2,
+              border: "thin dashed blue",
+              bgcolor: "transparent",
+              py: 3,
+            }}
+          >
+            <Typography
+              variant={"h6"}
+              fontWeight={700}
+              mb={3}
+              color={"#5c6b91"}
+            >
+              In Related To Us
+            </Typography>
+            <Typography variant={"subtitle2"}>
+              Veegor is a Decentralized Web 3.0 Blockchain Solution and Assets
+              Management Platform on which users can create Blockchain Solutions
+              with low development-fees, and can have at their fingertips the
+              power of a Blockchain Technology that supports Smart Contracts
+              from various Blockchain Networks. Across various industries around
+              the world, Blockchain Technology is helping to transform
+              businesses by its facilitation of Smart Contracts. With Veegor
+              DApp, you have the ability to Create, Store, Distribute, List and
+              Sell your Tokens all from your Smartphone and Web.
+            </Typography>
+          </Card>
+        </Box>
+        <Box className={"investment-wrapper"} my={"10em"} component={"section"}>
           <Box mb={2} textAlign={{ xs: "center", sm: "left" }}>
             <Typography
               variant={"h4"}
@@ -280,14 +311,20 @@ function LandingPage() {
             ></iframe>
           </div>
           <div className="section-content">
-            <div className="title">Veegor DApp</div>
+            <Typography variant={"h6"} fontWeight={700} mb={2}>
+              Your Trusted & Secure Crypto Wallet.
+            </Typography>
             <div className="text">
-              <span>
+              <Typography variant={"subtitle2"} mb={1}>
                 The Veegor dApp is the No.1 Web3 Platform, offering access to
                 token creation, with unique customization features including
                 marketplace listing. Launch your project on Veegor and
                 experience the power of blockchain from your Mobile Phone.
-              </span>
+              </Typography>
+              <Typography variant={"subtitle2"}>
+                Send, Receive, and Store crypto. Join 1000+ people using Veegor
+                Wallet.
+              </Typography>
             </div>
             <div className="links-wrapper">
               <div className="link">
@@ -331,26 +368,28 @@ function LandingPage() {
               </div>
               <div className="secondary-text">
                 <span>
-                  Lets keep in touch with you, you will be the first to recieve
-                  news about oportunities and offers from our platform
+                  Lets keep in touch with you, you will be the first to receive
+                  news about opportunities and offers from our platform
                 </span>
               </div>
             </div>
           </div>
           <div className="section-form">
-            <div className="form-control">
-              <input
-                type="email"
-                className="text-control email-textbox"
-                placeholder="Enter your email"
-                id="email"
-              />
-            </div>
-            <div className="action-btn">
-              <Button variant="contained" style={{ background: "#233664" }}>
-                <span>Subscribe</span>
-              </Button>
-            </div>
+            <TextField
+              type="email"
+              fullWidth
+              className="text-control email-textbox"
+              label="Enter your email"
+              id="email"
+            />
+            <Button
+              fullWidth
+              size={"large"}
+              variant="contained"
+              sx={{ textTransform: "none", color: "#fff", my: 2 }}
+            >
+              <span>Subscribe</span>
+            </Button>
           </div>
         </div>
       </div>

@@ -146,16 +146,8 @@
 }
 
 .video-section {
-	padding-block: 10em;
-	// color: grey;
 	position: relative;
-	margin-bottom: 10em;
-	background-color: map-get($map: $colors, $key: "lightblue");
-	// background-image: linear-gradient(
-	// 	to bottom,
-	// 	rgb(117, 117, 198),
-	// 	rgb(53, 53, 161)
-	// );
+	margin-block: 10em;
 
 	.wrapper {
 		display: flex;
@@ -270,7 +262,7 @@
 		color: map-get($map: $colors, $key: "black");
 
 		.section-icon {
-			background: #233664;
+			background: #f6ad19;
 			padding: 0.1em 0.2em;
 			width: fit-content;
 			border-radius: 10px;
@@ -287,28 +279,6 @@
 		justify-content: center;
 		min-width: 300px;
 
-		.form-control {
-			width: 100%;
-		}
-		.text-control {
-			padding: 1em;
-			background: #ececec;
-			border-radius: 5px;
-			margin: auto;
-			font-size: 1em;
-			font-family: Poppins;
-			display: block;
-			width: 90%;
-
-			@include media_700 {
-				width: 100%;
-			}
-		}
-		.action-btn {
-			width: fit-content;
-			margin: auto;
-			margin-top: 0.5em;
-		}
 	}
 	@include media_400 {
 		padding: 3em 1.5em;

@@ -16,8 +16,8 @@ export default function UseCases() {
 
   return (
     <div>
-      <Box mb={3}>
-        <Typography variant={"h4"} fontWeight={800} mb={2}>
+      <Box mb={3} textAlign={{ xs: "center", sm: "left" }}>
+        <Typography variant={"h4"} fontWeight={800} mb={2} color={"#5c6b91"}>
           Use Cases
         </Typography>
         <Typography variant={"subtitle2"} fontWeight={500}>
@@ -28,12 +28,13 @@ export default function UseCases() {
         </Typography>
       </Box>
       {cases.map((cas, index) => (
-        <Paper key={index} sx={{ mb: 2, p: 1.5 }}>
+        <Paper key={index} elevation={3} sx={{ mb: 2, p: 1.5 }}>
           <Accordion
             expanded={expanded === index}
             onChange={handleChange(index)}
             sx={{
-              bgcolor: "#f6ad19",
+              bgcolor: "#f3f5fd",
+              boxShadow: 0,
             }}
           >
             <AccordionSummary
@@ -41,7 +42,11 @@ export default function UseCases() {
               aria-controls="panel1bh-content"
               id="panel1bh-header"
             >
-              <Typography fontWeight={600} color={"#fff"}>
+              <Typography
+                fontWeight={600}
+                variant={"subtitle2"}
+                textTransform={"uppercase"}
+              >
                 {cas.title}
               </Typography>
             </AccordionSummary>
